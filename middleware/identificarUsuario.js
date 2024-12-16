@@ -22,6 +22,7 @@ const identificarUsuario = async (req, res, next) => {
         // Almacenar el usuario en req
         if (usuario) {
             req.usuario = usuario;
+            res.locals.usuario = usuario;
         } else {
             req.usuario = null;
         }
@@ -34,4 +35,4 @@ const identificarUsuario = async (req, res, next) => {
     }
 }
 
-export default identificarUsuario
+export default identificarUsuario;

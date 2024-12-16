@@ -21,7 +21,7 @@
     "MySQL",
     "Sequelize"
   ],
-  "author": "Esperanza Cruz Galindo",
+  "adaptado": "Jose Agustin Jimenez Castillo ",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",

@@ -19,7 +19,20 @@ const Usuario = db.define('usuarios', {
     token: {
         type: DataTypes.STRING
     },
-    confirmado: DataTypes.BOOLEAN
+    confirmado: DataTypes.BOOLEAN,
+    foto: {
+        type: DataTypes.STRING,
+        allowNull: true
+    },
+    alias: {
+        type: DataTypes.STRING,
+        allowNull: true
+    },
+    fechaDeNacimiento: {
+        type: DataTypes.DATEONLY,
+        allowNull: true
+    }
+
 }, {
     hooks: {
         beforeCreate: async function (usuario) {
