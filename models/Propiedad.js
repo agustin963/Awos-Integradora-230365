@@ -54,7 +54,6 @@ const Propiedad = db.define('propiedades', {
         allowNull: false,
     },
 
-
 });
 
 export default Propiedad
